@@ -157,7 +157,7 @@ if isinstance(duration, tuple) and len(duration) == 2:
     ax.plot(data.index, data["BB_Lower"], linestyle="--", label="BB_Lower", color="purple")
     ax.scatter(buy_signals.index, buy_signals["Close"], color="green", marker="^", label="BUY", alpha=1, s=100)
     ax.scatter(sell_signals.index, sell_signals["Close"], color="red", marker="v", label="SELL", alpha=1, s=100)
-    ax.set_title(f"Close {symbol}")
+    ax.set_title(f"Close price {symbol}")
     ax.set_xlabel("Date")
     ax.set_ylabel("Price ($)")
     ax.legend()
